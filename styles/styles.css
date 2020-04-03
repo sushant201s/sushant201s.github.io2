@@ -237,13 +237,13 @@ hr {
 }
 
 .begginner {
-    width: 11%;
+    width: 12%;
     margin-left: 9%;
     color: ivory;
 }
 
 .expert {
-    margin-left: 66%;
+    margin-left: 64.5%;
     color: ivory;
 }
 
@@ -779,7 +779,7 @@ hr {
     }
 }
 
-/* Medium devices (tablets, 768px and up) */
+/* Medium devices (tablets,modern phones 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
     .text-center {
         color: pink !important;
@@ -787,6 +787,19 @@ hr {
 
     #carouselExampleIndicators {
         width: 100%;
+    }
+
+    .nav-link {
+        font-size: 3em;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        width: 3em;
+        height: 3em;
+    }
+
+    #typeline {
+        font-size: 3.7rem;
     }
 
     .form input {
@@ -798,23 +811,36 @@ hr {
     }
 
     .form-progress {
-        margin-left: 24.4%;
+        margin-left: 24%;
     }
 
     .below-profile-pic {
         margin: 3% auto;
+        font-size: 2.5em;
+        width: 90%;
     }
 
     .quotes-heading {
         margin-bottom: -3%;
+        font-size: 5rem;
     }
 
     .description {
         width: 100%;
     }
 
+    .statsbar ul li {
+        margin: 2% auto;
+        width: 100%;
+    }
+
     .description p {
-        font-size: 1.2rem;
+        font-size: 2.7rem;
+    }
+
+    .statsbar ul {
+        flex-direction: column;
+        padding-left: 0;
     }
 
     .profile-pic {
@@ -823,52 +849,92 @@ hr {
 
     .img-desc {
         flex-direction: column;
+        margin-top: 7%;
     }
 
     .form input {
-        font-size: 1.2rem;
+        font-size: 1.9rem;
+    }
+
+    .empty-field {
+        font-size: 1.6rem;
+        width: 58%;
+        margin-left: 24%;
     }
 
     .particles-js-canvas-el {
-        margin-top: -35%;
+        margin-top: -87%;
     }
 
     #particles-js h1 {
-        font-size: 4.5rem;
-        margin-top: 24%;
+
+        margin-top: 80%;
+        font-size: 6.2rem;
     }
 
     #staticText {
         font-size: 2.2rem;
     }
 
+    .about h1 {
+        font-size: 5rem;
+    }
+
+    .profile-pic img {
+        width: 150%;
+        margin-left: -25%;
+    }
+
     .fa-angle-double-down {
-        margin-top: -18%;
+        margin-top: -53%;
+        font-size: 5em;
+        margin-left: 46%;
     }
 
     .number {
-        font-size: 1.5rem;
+        font-size: 5rem;
+    }
+
+    .skills h1 {
+        font-size: 5rem;
     }
 
     .statsbar p {
-        font-size: 1.1rem;
+        font-size: 3rem;
     }
 
     .begginner {
         margin-left: 6%;
         width: 21%;
+        font-size: 2rem;
+        width: 34%;
     }
 
     .expert {
-        margin-left: 56%;
+        margin-left: 42%;
+        font-size: 2rem;
+    }
+
+    .metric {
+        margin-bottom: 4%;
+    }
+
+    .progress-bar {
+        margin-left: -0.5%;
     }
 
     .line-mark {
-        margin-top: -1.9%;
+        margin-top: -3.5%;
+        margin-left: 3%;
+    }
+
+    .skills {
+        width: 90%;
     }
 
     .skill-container p {
-        font-size: 0.9rem;
+        font-size: 1.7rem;
+        width: 13%;
     }
 
     .carousel-item {
@@ -876,11 +942,27 @@ hr {
     }
 
     .carousel-inner p {
-        font-size: 1.3rem !important;
+        font-size: 2rem !important;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .stepMessage {
+        width: 49% !important;
+        margin-left: 24% !important;
+        margin-bottom: 0.5% !important;
     }
 
     .coffee-invite p {
-        font-size: 1rem !important;
+        font-size: 2rem !important;
+        width: 95%;
+        margin: 3% auto;
+    }
+
+    .contact-header {
+        font-size: 5rem;
     }
 
     .fa-arrow-right {
@@ -900,25 +982,26 @@ hr {
     }
 
     .signature {
-        margin-left: 1%;
-        margin-right: 1%;
-        width: 37%;
+        width: 80%;
+        margin: 3% auto;
     }
 
     .signature .name {
-        font-size: 1.7rem;
+        font-size: 4rem;
     }
 
     .signature p {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .copyright {
-        font-size: 0.9rem;
+        display: none;
     }
 
     .social-links {
-        font-size: 0.9rem;
+        width: 80%;
+        font-size: 2rem;
+        margin: 2% auto;
     }
 }
 

@@ -238,7 +238,7 @@ function clickAndScroll(clicked, scrollTo) {
 
 //function for animation on page load
 $(window).on('load', function () {
-    $('.loader').delay(100).fadeOut();
+    $('.loader').delay(7000).fadeOut();
 });
 
 //increase width of the form progressBar

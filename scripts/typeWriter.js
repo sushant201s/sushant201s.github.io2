@@ -36,8 +36,8 @@ function writeerase(obj, sentence, time, cb) {
 }
 
 var sentences = [
+    "Hi! Nice to see you !!",
     "I am a Full Stack Developer",
-    "I am a proud Indian ",
     "Let's get in touch "
 ]
 

@@ -1,10 +1,124 @@
 body {
-    background: #000000;
+    /* background: #000000; */
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* background: -webkit-linear-gradient(to right, #434343, #000000); */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000);
+    /* background: linear-gradient(to right, #434343, #000000); */
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #09090d;
+}
+
+.projects {
+    text-align: center;
+    color: darkorange;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.projects h1 {
+    margin-bottom: 3%;
+}
+
+.project-list {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 1% 2%;
+    width: 16rem;
+    height: 13rem;
+
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 280px;
+    height: 200px;
+    border: 1px solid #141414;
+    perspective: 1000px;
+    margin: 1%;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    background: linear-gradient(to right, red, yellow);
+    font-size: 1.1rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #141414;
+    color: antiquewhite;
+}
+
+.flip-card-front .fas,
+.fab {
+    margin-top: 20px;
+}
+
+.flip-card-front h1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: aquamarine;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #141414;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card-text {
+    margin: 0 4%;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gitlink {
+    margin: 2% auto;
+    background-color: #272626;
+    border: none;
+    font-size: 1.3rem;
+    color: antiquewhite;
+}
+
+.gitlink:hover {
+    background-color: rgb(29, 27, 27);
 }
 
 .welcome-page-bg {
@@ -16,12 +130,15 @@ body {
 
 /* styles for typeWriter effect */
 #staticText {
-    color: #c5f2ac;
+    /* color: #c5f2ac; */
     font-size: 2.5rem;
     line-height: 1;
     font-family: 'HelveticaNeue';
     font-weight: 100;
     position: relative;
+    background: linear-gradient(to right, rgb(248, 84, 42), yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #typeline {
@@ -71,8 +188,12 @@ canvas {
 #particles-js h1 {
     margin-top: 18%;
     font-size: 5.7rem;
-    color: rgb(255, 255, 64);
+    height: 121px;
+    /* color: rgb(255, 255, 64); */
     font-family: 'Sacramento', cursive;
+    background: -webkit-linear-gradient(rgb(255, 255, 64), rgb(63, 253, 37));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-link {
@@ -150,16 +271,20 @@ canvas {
 }
 
 .description p {
-    color: gainsboro;
+    /* color: gainsboro; */
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
     text-align: justify;
+
+    background: linear-gradient(to right, rgb(238, 240, 121) 0%, rgb(22, 255, 41) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 hr {
     margin-top: 4%;
     width: 80%;
-    border-top: 3px solid rgba(0, 0, 0, .1);
+    border-top: 3px solid rgba(122, 120, 120, 0.1);
 }
 
 .statsbar ul {
@@ -215,7 +340,8 @@ hr {
     font-family: 'Baloo 2', cursive;
     margin-top: -0.8%;
     width: 10%;
-    color: ivory;
+    /* color: ivory; */
+    color: #29d3e6;
     font-size: 1.5rem;
 }
 
@@ -239,12 +365,12 @@ hr {
 .begginner {
     width: 12%;
     margin-left: 9%;
-    color: ivory;
+    color: #0be61e;
 }
 
 .expert {
     margin-left: 64.5%;
-    color: ivory;
+    color: #0be61e;
 }
 
 .line-mark {
@@ -297,10 +423,14 @@ hr {
 }
 
 .carousel-inner p {
-    color: ivory;
+    /* color: ivory; */
+    /* color: #edf28f; */
     font-family: serif;
     font-style: italic;
     font-size: 2rem;
+    background: linear-gradient(to right, rgb(72, 255, 0), yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .firstline {
@@ -312,6 +442,8 @@ hr {
     font-family: 'Baloo Bhaina 2', cursive !important;
     font-style: normal !important;
     margin-top: 4% !important;
+    color: antiquewhite !important;
+    -webkit-text-fill-color: antiquewhite !important;
 }
 
 .coffee-invite {
@@ -328,9 +460,12 @@ hr {
 .coffee-invite p {
     /* font-family: 'Sen', sans-serif; */
     font-family: 'Muli', sans-serif;
-    color: ivory;
+    /* color: ivory; */
     font-size: 1.5rem;
     margin-top: 2%;
+    background: linear-gradient(to right, rgb(231, 222, 222), rgb(255, 0, 221));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .form input {
@@ -369,6 +504,7 @@ hr {
     margin: 1% auto;
     text-align: left;
     font-family: 'Noto Sans', sans-serif;
+    -webkit-text-fill-color: antiquewhite !important;
 }
 
 .footer {
@@ -1082,8 +1218,8 @@ hr {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .text-center {
-        color: orange !important;
+    .text-center h1 {
+        /* color: orange !important; */
     }
 
     .particles-js-canvas-el {

@@ -23,17 +23,27 @@ $(window).scroll(testScroll);
 var viewed = false;
 
 function isScrolledIntoView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+    // var docViewTop = $(window).scrollTop();
+    // var docViewBottom = docViewTop + $(window).height();
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
+    // var elemTop = $(elem).offset().top;
+    // var elemBottom = elemTop + $(elem).height();
 
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    // return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+
+    var rect = document.getElementsByClassName(elem)[0].getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+
+    // Only completely visible elements return true:
+    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    // Partially visible elements return true:
+    //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+    return isVisible;
 }
 
 function testScroll() {
-    if (isScrolledIntoView($(".statsbar")) && !viewed) {
+    if (isScrolledIntoView("statsbar") && !viewed) {
         viewed = true;
         animateValue("linesCode", 119700, 120000, 0.5);
         animateValue("pixels", 301783200, 301783509, 0.5);
@@ -47,8 +57,9 @@ $(window).scroll(testScrollforProgressBar);
 var viewedstats = false;
 
 function testScrollforProgressBar() {
-    if (isScrolledIntoView($(".skill-container")) && !viewedstats) {
+    if (isScrolledIntoView("skills") && !viewedstats) {
         viewedstats = true;
+        console.log("scrolled to skills");
         animateProgressBar("html", 70, 4500);
         animateProgressBar("js", 80, 500);
         animateProgressBar("es", 70, 500);
@@ -70,7 +81,7 @@ function animateProgressBar(id, widthToAnimate, duration) {
     setInterval(function () {
         while (parseInt(document.getElementById(id).style.width.slice(0, 2)) < widthToAnimate)
             document.getElementById(id).style.width = (parseInt(document.getElementById(id).style.width.slice(0, 2)) + 1) + "%";
-    }, 1000);
+    }, 500);
 }
 
 
@@ -208,6 +219,7 @@ clickAndScroll(".fa-angle-double-down", ".about");
 clickAndScroll(".about-nav", ".about");
 clickAndScroll(".skills-nav", ".skills");
 clickAndScroll(".contact-nav", ".coffee-invite");
+clickAndScroll(".project-nav", ".projects");
 
 
 //function to click on a button and navigate on some div

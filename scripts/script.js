@@ -38,9 +38,9 @@ function isScrolledIntoView(elem) {
 function testScroll() {
     if (isScrolledIntoView("statsbar") && !viewed) {
         viewed = true;
-        animateValue("linesCode", 119700, 120000, 0.5);
-        animateValue("pixels", 301783200, 301783509, 0.5);
-        animateValue("coffeeCups", 1226, 1526, 0.5);
+        animateValue("linesCode", 119800, 120000, 0.5);
+        animateValue("pixels", 301783300, 301783509, 0.5);
+        animateValue("coffeeCups", 1326, 1526, 0.5);
         animateValue("projectsdone", 0, 14, 0.5);
     }
 }

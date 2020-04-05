@@ -23,14 +23,6 @@ $(window).scroll(testScroll);
 var viewed = false;
 
 function isScrolledIntoView(elem) {
-    // var docViewTop = $(window).scrollTop();
-    // var docViewBottom = docViewTop + $(window).height();
-
-    // var elemTop = $(elem).offset().top;
-    // var elemBottom = elemTop + $(elem).height();
-
-    // return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-
     var rect = document.getElementsByClassName(elem)[0].getBoundingClientRect();
     var elemTop = rect.top;
     var elemBottom = rect.bottom;
@@ -41,6 +33,7 @@ function isScrolledIntoView(elem) {
     //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
     return isVisible;
 }
+
 
 function testScroll() {
     if (isScrolledIntoView("statsbar") && !viewed) {
@@ -61,14 +54,14 @@ function testScrollforProgressBar() {
         viewedstats = true;
         console.log("scrolled to skills");
         animateProgressBar("html", 70, 4500);
-        animateProgressBar("js", 80, 500);
-        animateProgressBar("es", 70, 500);
+        animateProgressBar("js", 90, 500);
+        animateProgressBar("es", 80, 500);
         animateProgressBar("jquery", 60, 500);
         animateProgressBar("express", 80, 500);
-        animateProgressBar("node", 70, 500);
-        animateProgressBar("rest", 90, 500);
-        animateProgressBar("c/c++", 30, 500);
-        animateProgressBar("java", 50, 500);
+        animateProgressBar("node", 85, 500);
+        animateProgressBar("rest", 70, 500);
+        animateProgressBar("c/c++", 80, 500);
+        animateProgressBar("java", 90, 500);
         animateProgressBar("sql", 80, 500);
         animateProgressBar("algo", 90, 500);
     }
@@ -238,7 +231,7 @@ function clickAndScroll(clicked, scrollTo) {
 
 //function for animation on page load
 $(window).on('load', function () {
-    $('.loader').delay(7000).fadeOut();
+    $('.loader').delay(2000).fadeOut();
 });
 
 //increase width of the form progressBar

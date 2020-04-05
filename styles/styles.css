@@ -55,6 +55,7 @@ body {
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+
 }
 
 /* Position the front and back side */
@@ -66,6 +67,7 @@ body {
     -webkit-backface-visibility: hidden;
     /* Safari */
     backface-visibility: hidden;
+    transform: rotateX(0deg);
 }
 
 .flip-card-back {
@@ -107,6 +109,10 @@ body {
     margin: 0 4%;
     text-align: justify;
     font-family: 'Montserrat', sans-serif;
+
+    background: linear-gradient(to right, red, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .gitlink {
@@ -181,12 +187,12 @@ canvas {
     background-repeat: no-repeat;
     background-size: cover;
 
-
     /* background-position: 50% 50%; */
 }
 
 #particles-js h1 {
-    margin-top: 18%;
+    margin-top: 15%;
+    
     font-size: 5.7rem;
     height: 121px;
     /* color: rgb(255, 255, 64); */
@@ -220,12 +226,14 @@ canvas {
 .fa-angle-double-down {
     color: darkgray;
     margin-left: 50%;
-    margin-top: -13%;
+    /* margin-top: -13%; */
     padding: 1%;
     animation: bounce 0.5s;
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
     animation-iteration-count: infinite;
+    position: absolute;
+    bottom: 20px;
 }
 
 @keyframes bounce {
@@ -588,17 +596,6 @@ hr {
 
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans);
 
-.loader {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: url('https://assets.materialup.com/uploads/7228db40-5beb-496e-86f0-82050b6cc9f1/preview.gif') 50% 50% no-repeat rgb(253, 252, 252);
-
-    /* background: url('http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif?e44397') 50% 50% no-repeat rgb(249, 249, 249); */
-}
 
 .form-progress {
     height: 20px;
@@ -1223,6 +1220,6 @@ hr {
     }
 
     .particles-js-canvas-el {
-        margin-top: -27%;
+        margin-top: -26%;
     }
 }

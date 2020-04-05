@@ -50,9 +50,9 @@ $(window).scroll(testScrollforProgressBar);
 var viewedstats = false;
 
 function testScrollforProgressBar() {
-    if (isScrolledIntoView("skills") && !viewedstats) {
+    if (isScrolledIntoView("visibility") && !viewedstats) {
         viewedstats = true;
-        console.log("scrolled to skills");
+        // console.log("scrolled to skills");
         animateProgressBar("html", 70, 4500);
         animateProgressBar("js", 90, 500);
         animateProgressBar("es", 80, 500);
@@ -109,11 +109,11 @@ var messageForMe, nameOfPerson, contactInfo;
 //function to call for the form action
 function formAction() {
     //move to next step after q3
-    if (document.getElementById("q3") == document.getElementsByClassName("show")[0]) {
+    if (document.getElementById("q3") == document.getElementsByClassName("showing")[0]) {
         if (document.querySelector("#q3 input").value.trim() != "") {
             contactInfo = document.querySelector("#q3 input").value;
             //add hide class to q1 and remove active
-            document.getElementById("q3").classList.remove("show");
+            document.getElementById("q3").classList.remove("showing");
             document.getElementById("q3").classList.add("hide");
             //display the thanks message
             // document.getElementsByClassName("thanks-message")[0].classList.toggle("hide");
@@ -135,15 +135,15 @@ function formAction() {
 
     }
     //move to next steps for q2
-    if (document.getElementById("q2") == document.getElementsByClassName("show")[0]) {
+    if (document.getElementById("q2") == document.getElementsByClassName("showing")[0]) {
         if (document.querySelector("#q2 input").value.trim() != "") {
             nameOfPerson = document.querySelector("#q2 input").value;
             //add hide class to q1 and remove active
-            document.getElementById("q2").classList.remove("show");
+            document.getElementById("q2").classList.remove("showing");
             document.getElementById("q2").classList.add("hide");
             //add class active to q2 and remove hide
             document.getElementById("q3").classList.remove("hide");
-            document.getElementById("q3").classList.add("show");
+            document.getElementById("q3").classList.add("showing");
             //update the step counter
             document.getElementsByClassName("stepCount")[0].textContent = "3/3";
             //update the step message
@@ -161,16 +161,16 @@ function formAction() {
 
     }
     //move to the next steps for q1
-    if (document.getElementById("q1") == document.getElementsByClassName("show")[0]) {
+    if (document.getElementById("q1") == document.getElementsByClassName("showing")[0]) {
         //check if the input field is empty
         if (document.querySelector("#q1 input").value.trim() != "") {
             messageForMe = document.querySelector("#q1 input").value;
             //add hide class to q1 and remove active
-            document.getElementById("q1").classList.remove("show");
+            document.getElementById("q1").classList.remove("showing");
             document.getElementById("q1").classList.add("hide");
             //add class active to q2 and remove hide
             document.getElementById("q2").classList.remove("hide");
-            document.getElementById("q2").classList.add("show");
+            document.getElementById("q2").classList.add("showing");
 
             //update the step counter
             document.getElementsByClassName("stepCount")[0].textContent = "2/3";

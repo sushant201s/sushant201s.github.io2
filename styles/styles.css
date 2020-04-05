@@ -178,6 +178,7 @@ canvas {
 
 /* ---- particles.js container ---- */
 #particles-js {
+
     /* margin-top: 200px; */
     position: relative;
     width: 100%;
@@ -922,6 +923,14 @@ hr {
         color: pink !important;
     }
 
+    #particles-js {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 88%;
+    }
+
     .projects {
         margin-bottom: 8%;
     }
@@ -1040,7 +1049,7 @@ hr {
     }
 
     #particles-js h1 {
-        margin-top: 73%;
+        /* margin-top: 73%; */
         font-size: 7rem;
         height: 148px;
 

@@ -192,7 +192,7 @@ canvas {
 
 #particles-js h1 {
     margin-top: 15%;
-    
+
     font-size: 5.7rem;
     height: 121px;
     /* color: rgb(255, 255, 64); */
@@ -244,6 +244,10 @@ canvas {
     to {
         transform: translate3d(0, 20px, 0);
     }
+}
+
+.skills-mobile {
+    display: none;
 }
 
 .about {
@@ -918,8 +922,44 @@ hr {
         color: pink !important;
     }
 
+    .projects {
+        margin-bottom: 8%;
+    }
+
+    .projects>h1 {
+        font-size: 5rem;
+        margin-bottom: 60px;
+    }
+
+    .gitlink {
+        width: 68%;
+        font-size: 2.5rem;
+    }
+
+    .flip-card {
+        width: 40%;
+        height: 360px;
+    }
+
+    .flip-card-back {
+        font-size: 1.8rem;
+    }
+
+    .flip-card-front h1 {
+        font-size: 2.4rem;
+    }
+
+    .flip-card-front .fas,
+    .flip-card-front .fab {
+        font-size: 12em;
+    }
+
+    .about {
+        margin: 5% 8%;
+    }
+
     #carouselExampleIndicators {
-        width: 100%;
+        display: none;
     }
 
     .nav-link {
@@ -944,7 +984,7 @@ hr {
     }
 
     .form-progress {
-        margin-left: 24%;
+        margin-left: 13%;
     }
 
     .below-profile-pic {
@@ -954,8 +994,7 @@ hr {
     }
 
     .quotes-heading {
-        margin-bottom: -3%;
-        font-size: 5rem;
+        display: none;
     }
 
     .description {
@@ -986,13 +1025,13 @@ hr {
     }
 
     .form input {
-        font-size: 1.9rem;
+        font-size: 3rem;
     }
 
     .empty-field {
-        font-size: 1.6rem;
         width: 58%;
-        margin-left: 24%;
+        font-size: 2rem;
+        margin-left: 13%;
     }
 
     .particles-js-canvas-el {
@@ -1000,13 +1039,14 @@ hr {
     }
 
     #particles-js h1 {
+        margin-top: 73%;
+        font-size: 7rem;
+        height: 148px;
 
-        margin-top: 80%;
-        font-size: 6.2rem;
     }
 
     #staticText {
-        font-size: 2.2rem;
+        font-size: 4rem;
     }
 
     .about h1 {
@@ -1036,46 +1076,48 @@ hr {
         font-size: 3rem;
     }
 
-    .begginner {
-        margin-left: 6%;
-        width: 21%;
-        font-size: 2rem;
-        width: 34%;
+    .link {
+        font-size: 3.2rem;
     }
 
-    .expert {
-        margin-left: 42%;
-        font-size: 2rem;
-    }
 
-    .metric {
-        margin-bottom: 4%;
-    }
-
-    .progress-bar {
-        margin-left: -0.5%;
-    }
-
+    .metric,
+    .skill-container,
     .line-mark {
-        margin-top: -3.5%;
-        margin-left: 3%;
+        display: none;
     }
 
     .skills {
-        width: 90%;
+        margin-top: 5%;
+        margin-bottom: 10%;
     }
 
-    .skill-container p {
-        font-size: 1.7rem;
-        width: 13%;
+    .skills-mobile {
+        display: block;
     }
 
-    .carousel-item {
-        margin-top: 7%;
+    .skills-mobile th {
+        font-family: 'Comic Neue', cursive;
+        font-size: 3.5rem;
+        color: aqua;
     }
 
-    .carousel-inner p {
-        font-size: 2rem !important;
+    .skills-mobile table {
+        text-align: center;
+        color: antiquewhite;
+        background-color: transparent;
+    }
+
+    .skills-mobile tbody {
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    .skills-mobile tr {
+        font-size: 3rem;
+    }
+
+    .skills-mobile td {
+        border-top: none;
     }
 
     .footer {
@@ -1084,12 +1126,12 @@ hr {
 
     .stepMessage {
         width: 49% !important;
-        margin-left: 24% !important;
+        /* margin-left: 24% !important; */
         margin-bottom: 0.5% !important;
     }
 
     .coffee-invite p {
-        font-size: 2rem !important;
+        font-size: 3rem !important;
         width: 95%;
         margin: 3% auto;
     }
@@ -1100,31 +1142,35 @@ hr {
 
     .fa-arrow-right {
         margin-left: -6%;
+        font-size: 2.5em;
     }
 
     .form input {
-        height: 44px;
+        width: 83%;
+        height: 82px;
     }
 
     .stepMessage {
-        margin-left: 24%;
+        width: 75% !important;
+        /* margin-left: 24%; */
     }
 
     .stepCount {
-        font-size: 1rem;
+        font-size: 2.5rem;
+        width: 84%;
     }
 
     .signature {
-        width: 80%;
+        width: 95%;
         margin: 3% auto;
     }
 
     .signature .name {
-        font-size: 4rem;
+        font-size: 6rem;
     }
 
     .signature p {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .copyright {
@@ -1133,7 +1179,7 @@ hr {
 
     .social-links {
         width: 80%;
-        font-size: 2rem;
+        font-size: 4rem;
         margin: 2% auto;
     }
 }

@@ -1078,7 +1078,7 @@ hr {
     }
 
     .link {
-        font-size: 3.2rem;
+        font-size: 2.9rem;
     }
 
 
@@ -1133,8 +1133,13 @@ hr {
 
     .coffee-invite p {
         font-size: 3rem !important;
-        width: 95%;
         margin: 3% auto;
+        text-align: justify;
+        width: 78%;
+    }
+
+    .social-links p {
+        display: none;
     }
 
     .contact-header {

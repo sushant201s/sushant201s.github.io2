@@ -1035,7 +1035,8 @@ hr {
     }
 
     .particles-js-canvas-el {
-        margin-top: -87%;
+        /* margin-top: -87%; */
+        display: none;
     }
 
     #particles-js h1 {

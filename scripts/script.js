@@ -36,7 +36,7 @@ function isScrolledIntoView(elem) {
 
 
 function testScroll() {
-    if (isScrolledIntoView("statsbar") && !viewed) {
+    if (isScrolledIntoView("description") && !viewed) {
         viewed = true;
         animateValue("linesCode", 119800, 120000, 0.5);
         animateValue("pixels", 301783300, 301783509, 0.5);

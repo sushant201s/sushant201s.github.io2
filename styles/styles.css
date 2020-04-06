@@ -943,6 +943,10 @@ hr {
         color: pink !important;
     }
 
+    .thanks-message {
+        width: 80% !important;
+    }
+
     .navbar {
         z-index: 1000;
     }
@@ -1105,9 +1109,10 @@ hr {
     }
 
     .fa-angle-double-down {
-        margin-top: -53%;
+        /* margin-top: -53%; */
         font-size: 5em;
         margin-left: 46%;
+        bottom: 50px;
     }
 
     .number {

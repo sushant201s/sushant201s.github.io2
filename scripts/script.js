@@ -192,18 +192,18 @@ function formAction() {
 }
 
 //function to send email to the form
-// function sendEmailForForm() {
-//     //code to send email to my email id
-//     Email.send({
-//         Host: "smtp.elasticemail.com",
-//         Username: "sushant.201s@gmail.com",
-//         Password: "FDB4235B13BFBAA1E2E7620D7CA14137CBE2",
-//         To: 'sushant.201s@gmail.com',
-//         From: "sushant.201s@gmail.com",
-//         Subject: "Portfolio Query",
-//         Body: "Name :" + nameOfPerson + "\nContact Info " + contactInfo + "\nmessage :" + messageForMe
-//     }).then();
-// }
+function sendEmailForForm() {
+    //code to send email to my email id
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "sushant.201s@gmail.com",
+        Password: "FDB4235B13BFBAA1E2E7620D7CA14137CBE2",
+        To: 'sushant.201s@gmail.com',
+        From: "sushant.201s@gmail.com",
+        Subject: "Portfolio Query",
+        Body: "Name :" + nameOfPerson + "\nContact Info " + contactInfo + "\nmessage :" + messageForMe
+    }).then();
+}
 
 //functionality to scroll down when down arrow button is clicked
 clickAndScroll(".fa-angle-double-down", ".about");

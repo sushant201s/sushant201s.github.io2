@@ -943,6 +943,10 @@ hr {
         color: pink !important;
     }
 
+    .navbar {
+        z-index: 1000;
+    }
+
     .mobileFooterImg {
         display: block;
     }

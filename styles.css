@@ -187,4 +187,31 @@ span,
     .district-stats {
         margin-top: -30px;
     }
+
+    .samples h2,
+    .confirmed h2,
+    .indians h2,
+    .foreign h2,
+    .discharged h2,
+    .deaths h2 {
+        font-size: 1.5rem !important;
+    }
+
+    #selected-state {
+        font-size: 1.5rem !important;
+    }
+
+    .stateTotalConfirmed h2,
+    .stateIndians h2,
+    .stateForeign h2,
+    .stateDischarge h2,
+    .stateDeaths h2 {
+        font-size: 1.5rem;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+
+    thead {
+        font-size: 1.4rem;
+    }
 }

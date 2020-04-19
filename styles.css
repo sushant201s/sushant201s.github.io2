@@ -163,7 +163,28 @@ span,
 
 /* mobile phone */
 @media only screen and (max-width: 768px) {
-    .district-stats{
+    .district-stats {
         width: 80%;
+    }
+
+    #india-heading {
+        font-size: 1.7rem;
+    }
+
+    span,
+    #date {
+        font-size: 1.2rem;
+    }
+
+    .stats-india {
+        margin-top: 0px;
+    }
+
+    .state-stats {
+        margin-top: 0;
+    }
+
+    .district-stats {
+        margin-top: -30px;
     }
 }

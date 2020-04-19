@@ -189,7 +189,7 @@ function getResourceObject() {
 function getResourceCountForState(resourceData) {
     let myMap = new Map();
     //check if selected name has 'and', replace by '&'
-    selectedStateName = selectedStateName.replace("and", '&');
+    selectedStateName = selectedStateName.replace(" and ", ' & ');
     resourceData.resources.forEach(function (resource) {
         if (myMap.has(resource.category) && resource.state == selectedStateName) {
             var count = myMap.get(resource.category);

@@ -1,0 +1,169 @@
+body {
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.show-after-state-select {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.samples,
+.confirmed,
+.indians,
+.foreign,
+.discharged,
+.deaths {
+    width: 240px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 10px;
+}
+
+.stats-india,
+.state-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px auto;
+}
+
+.stateTotalConfirmed,
+.stateIndians,
+.stateForeign,
+.stateDischarge,
+.stateDeaths {
+    margin: 10px 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.district-stats {
+    width: 490px;
+    margin: 0 auto;
+}
+
+#select-region {
+    width: 250px;
+}
+
+#select-resource {
+    width: 300px;
+}
+
+#india-heading {
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    background: -webkit-linear-gradient(left, rgb(20, 20, 20), rgb(126, 122, 114));
+    background: -o-linear-gradient(right, rgb(20, 20, 20), rgb(126, 122, 114));
+    background: -moz-linear-gradient(right, rgb(20, 20, 20), rgb(126, 122, 114));
+    background: linear-gradient(to right, rgb(20, 20, 20), rgb(126, 122, 114));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#selected-state {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2rem;
+    margin-top: 10px;
+    background: -webkit-linear-gradient(left, red, rgb(255, 166, 0));
+    background: -o-linear-gradient(right, red, rgb(255, 166, 0));
+    background: -moz-linear-gradient(right, red, rgb(255, 166, 0));
+    background: linear-gradient(to right, red, rgb(255, 166, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.indians,
+.stateIndians,
+.foreign {
+    color: #2c2c2c;
+}
+
+.countryVal,
+.statsVal {
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.confirmed,
+.stateTotalConfirmed {
+    color: rgb(255, 7, 58);
+}
+
+.discharged,
+.stateDischarge {
+    color: rgb(7, 207, 54);
+}
+
+.deaths,
+.stateDeaths {
+    color: rgb(108, 117, 125);
+}
+
+.samples {
+    color: #0da0daea;
+}
+
+table {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 50px;
+}
+
+tbody {
+    font-size: 1.3rem;
+}
+
+.resource {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resource-card {
+    border: 2px solid rgb(80, 184, 20);
+    font-size: 1.5rem !important;
+    font-family: 'Ubuntu', sans-serif;
+    width: 420px;
+    margin: 15px;
+    padding: 10px;
+    text-align: left;
+}
+
+.nameOfOrg {
+    font-size: 1.5rem !important;
+    font-weight: 600;
+}
+
+.city,
+.phone {
+    font-size: 1.5rem !important;
+}
+
+.category {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.1rem;
+    background: -webkit-linear-gradient(left, rgb(25, 173, 69), rgb(211, 214, 15));
+    background: -o-linear-gradient(right, rgb(25, 173, 69), rgb(211, 214, 15));
+    background: -moz-linear-gradient(right, rgb(25, 173, 69), rgb(211, 214, 15));
+    background: linear-gradient(to right, rgb(25, 173, 69), rgb(211, 214, 15));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+span,
+#date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* mobile phone */
+@media only screen and (max-width: 768px) {
+    .district-stats{
+        width: 80%;
+    }
+}
